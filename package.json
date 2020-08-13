@@ -1,5 +1,5 @@
 {
-  "name": "tsm",
+  "name": "@initics/tsm",
   "version": "1.0.0",
   "description": "Tiny state machine",
   "author": "initics",
