@@ -7,18 +7,16 @@
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
   "files": [
-    "./lib/"
+    "lib",
+    "README.md"
   ],
   "keywords": [
+    "state machine",
     "state",
     "machine"
   ],
   "scripts": {
     "build": "tsc && tsc -p tsconfig.cjs.json",
-    "postbuild": "tscpaths -p ./tsconfig.json -s ./src -o ./lib/esm > /dev/null && tscpaths -p ./tsconfig.cjs.json -s ./src -o ./lib/cjs > /dev/null",
-    "start": "node ./lib/index.js",
-    "prestart": "npm run build",
-    "start:dev": "nodemon",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
@@ -33,12 +31,8 @@
     "eslint-plugin-jest": "^23.20.0",
     "eslint-plugin-node": "^11.1.0",
     "jest": "^26.4.0",
-    "nodemon": "^2.0.4",
     "reflect-metadata": "^0.1.13",
     "ts-jest": "^26.2.0",
-    "ts-node": "^8.10.2",
-    "tsconfig-paths": "^3.9.0",
-    "tscpaths": "0.0.9",
     "typescript": "^3.9.7"
   }
 }
