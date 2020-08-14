@@ -10,6 +10,10 @@
     "lib",
     "README.md"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/initics/tsm"
+  },
   "keywords": [
     "state machine",
     "state",
