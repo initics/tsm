@@ -1,5 +1,5 @@
 import { StateMachine, StateMachineDefinition } from './tsm';
-import { InvalidtTransitionError } from './invalid-transition.error';
+import { InvalidTransitionError } from './invalid-transition.error';
 
 const DEFINITION: StateMachineDefinition = {
     initial: 'ready',
@@ -93,12 +93,12 @@ describe(StateMachine, () => {
         });
 
         it('should throw InvalidTransitionError for transition from "ready" -> "stopped"', () => {
-            expect(() => sm.transition('stopped')).toThrowError(InvalidtTransitionError);
+            expect(() => sm.transition('stopped')).toThrowError(InvalidTransitionError);
         });
 
         it('should throw InvalidTransitionError for transition from "running" -> "running"', () => {
             sm.transition('running');
-            expect(() => sm.transition('running')).toThrowError(InvalidtTransitionError);
+            expect(() => sm.transition('running')).toThrowError(InvalidTransitionError);
         });
 
     });

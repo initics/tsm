@@ -1,5 +1,5 @@
 import { State } from './state';
-import { InvalidtTransitionError } from './invalid-transition.error';
+import { InvalidTransitionError } from './invalid-transition.error';
 
 interface StateMachineTransition {
 
@@ -32,7 +32,7 @@ export class StateMachine {
             this._state = to;
         }
         else {
-            throw new InvalidtTransitionError(this._state, to);
+            throw new InvalidTransitionError(this._state, to);
         }
     }
 

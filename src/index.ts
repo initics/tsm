@@ -1,2 +1,2 @@
 export { StateMachine, StateMachineDefinition } from './tsm';
-export { InvalidtTransitionError } from './invalid-transition.error';
+export { InvalidTransitionError as InvalidtTransitionError } from './invalid-transition.error';
