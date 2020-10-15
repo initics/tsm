@@ -36,7 +36,7 @@ export class StateMachine {
         }
     }
 
-    private canTransition(from: State, to: State): boolean {
+    canTransition(from: State, to: State): boolean {
         return !! this.definition.transitions.find(item => {
             return (
                 (

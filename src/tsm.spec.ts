@@ -31,37 +31,30 @@ describe(StateMachine, () => {
         });
 
         it('should return true for transition "ready" -> "running"', () => {
-            // @ts-ignore
             expect(sm.canTransition('ready', 'running')).toBe(true);
         });
 
         it('should return true for transition "running" -> "stopped"', () => {
-            // @ts-ignore
             expect(sm.canTransition('running', 'stopped')).toBe(true);
         });
 
         it('should return true for transition "suspended" -> "stopped"', () => {
-            // @ts-ignore
             expect(sm.canTransition('suspended', 'stopped')).toBe(true);
         });
 
         it('should return true for transition "running" -> "suspended"', () => {
-            // @ts-ignore
             expect(sm.canTransition('running', 'suspended')).toBe(true);
         });
 
         it('should return true for transition "suspended" -> "running"', () => {
-            // @ts-ignore
             expect(sm.canTransition('suspended', 'running')).toBe(true);
         });
 
         it('should return false for transition "ready" -> "suspended"', () => {
-            // @ts-ignore
             expect(sm.canTransition('ready', 'suspended')).toBe(false);
         });
 
         it('should return false for transition "ready" -> "stopped"', () => {
-            // @ts-ignore
             expect(sm.canTransition('ready', 'stopped')).toBe(false);
         });
 
