@@ -1,6 +1,6 @@
 {
   "name": "@initics/tsm",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Tiny state machine",
   "author": "initics",
   "license": "MIT",
